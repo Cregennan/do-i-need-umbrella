@@ -14,7 +14,7 @@ namespace DoINeedUmbrellaToday.Controllers
         public async Task<IActionResult> Post()
         {
             /* А почему ввод тела запроса через [FromBody]Update update не работает? 
-             * Я понимаю что такие маневры скорее всего влекут проблемы с безопасностью, но на случай невалидного тела вроде стоит проверка исключения, должно работать
+             * Я понимаю что такие маневры скорее всего влекут проблемы с безопасностью, но вроде должно работать
              */
 
             using (var reader = new StreamReader(Request.Body))
